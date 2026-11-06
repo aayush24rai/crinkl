@@ -14,6 +14,7 @@ Crinkl is a free, open-source tool for small businesses. You photograph your pap
 4. **Matching** — rule-based scoring on amount, date window, vendor name, and card last-4.
 5. **Review** — anything low-confidence lands in a review queue.
 6. **Export** — CSV of matched / missing receipt / ambiguous / unmatched (possible cash).
+7. **Archive** — every receipt and statement is kept, encrypted, and searchable, and you can download a full year as an "audit pack" (organized folders + index) any time.
 
 ## Why it exists
 

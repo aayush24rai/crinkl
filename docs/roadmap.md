@@ -40,13 +40,15 @@ Each sub-phase has a "done when." Move on only when it's met.
 - **5.5** R2 storage + envelope encryption.
 - **5.6** Endpoints: upload, job status, results, review actions, export.
 - **5.7** Structured logging, error tracking, audit log.
-- **5.8** Per-business quotas, account and data deletion.
+- **5.8** Per-business quotas (processing + storage), account and data deletion.
+- **5.9** Archive API (ADR 0007): browse/filter, single-file download, yearly "audit pack" export (zip of receipts in folders + CSV index), per-file and per-year deletion. *Done when:* a year of test receipts exports, re-imports cleanly into a spreadsheet, and every file opens; search on a synthetic 10,000-receipt business stays within the latency budget.
 
 ### Phase 6: Frontend
 - **6.1** Auth screens.
 - **6.2** Upload flow with progress and retake prompts.
 - **6.3** Review queue: receipt image beside transaction; approve / fix / reject.
 - **6.4** Results view + CSV export.
+- **6.5** Archive view: browse by year / month / vendor / status, open a receipt beside its transaction, download, export audit pack.
 
 ### Phase 7: Deploy and operate
 - **7.1** Deploy backend, frontend, DB on free tiers.
@@ -64,6 +66,7 @@ Each sub-phase has a "done when." Move on only when it's met.
 
 ## v0.3
 - Organizations with multiple businesses (only if real users ask).
+- Optional sync of the archive to the user's own Google Drive (candidate, ADR 0007).
 - Multiple receipts per photo.
 - Line items.
 

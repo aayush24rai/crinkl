@@ -10,6 +10,7 @@ One file per decision. Never edit an accepted record's decision — supersede it
 | [0004](0004-llm-data-policy.md) | LLM sees redacted OCR text only, routed by failure type | Accepted |
 | [0005](0005-envelope-encryption.md) | App-level envelope encryption with per-business keys | Accepted |
 | [0006](0006-single-business-tenancy.md) | One business per account for v0.1 | Accepted |
+| [0007](0007-receipt-archive.md) | Receipt and statement archive | Accepted |
 
 ## Template
 
